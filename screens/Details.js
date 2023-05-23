@@ -1,8 +1,16 @@
-import { Text } from "react-native"
+import { View, Image, Text, SafeAreaView, StatusBar, FlatList } from 'react-native'
+import { COLORS, SIZES, SHADOWS, assets } from '../constants';
+import { CircleButton, RectButton, SubInfo, FocusedStatusBar, DetailsDesc, DetailsBid } from '../components';
 
-const Details = () => {
+const Details = ({ route, navigation }) => {
+  const { data } = route.params;
+  console.log(data);
   return (
-    <Text>Details</Text>
+    <SafeAreaView>
+      <FocusedStatusBar
+        barStyle="dark-content"
+      />
+    </SafeAreaView>
   )
 }
 
