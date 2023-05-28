@@ -3,7 +3,7 @@ import React from 'react';
 import { EthPrice } from './SubInfo';
 import { COLORS, SHADOWS, SIZES, FONTS } from '../constants';
 
-const DetailsBid = ({ bid }) => {
+const DetailsBid = ({ bid }) => { 
   return (
     <View
       style={{
